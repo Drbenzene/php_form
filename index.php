@@ -6,33 +6,33 @@ require_once 'include/header.php'; ?>
 
 <!-- Registration Form -->
 
-<form>
+<form method="get" action="success.php">
     <div class="form-group">
-        <label for="exampleInputEmail1">First Name</label>
-        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+        <label for="first">First Name</label>
+        <input type="text" class="form-control" id="first" name="first" aria-describedby="emailHelp"
             placeholder="Surname">
 
     </div>
     <div class="form-group">
-        <label for="exampleInputEmail1">Last Name</label>
-        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+        <label for="last">Last Name</label>
+        <input type="text" class="form-control" id="last" name="last" aria-describedby="emailHelp"
             placeholder="Other Names">
 
     </div>
 
     <div class="form-group">
-        <label for="inputAddress">Address</label>
-        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+        <label for="Address">Address</label>
+        <input type="text" class="form-control" id="Address" name="Address" placeholder="1234 Main St">
     </div>
 
     <div class="form-group">
         <label for="dob">Date Of Birth</label>
-        <input type="" class="form-control" id="dob" aria-describedby="emailHelp">
+        <input type="" class="form-control" id="dob" name="dob" aria-describedby="emailHelp">
     </div>
 
     <div class="form-group">
         <label for="speciality">Speciality</label>
-        <select id="speciality" class="form-control">
+        <select id="speciality" class="form-control" name="speciality">
             <option selected>Database Admin</option>
             <option>Web Administrator</option>
             <option>Frontend Engineer</option>
@@ -42,31 +42,31 @@ require_once 'include/header.php'; ?>
     </div>
 
     <div class="form-group">
-        <label for="exampleInputEmail1">Email address</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+        <label for="address">Email address</label>
+        <input type="email" class="form-control" id="Email" name="email" aria-describedby="emailHelp"
             placeholder="Enter email">
         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
     </div>
 
     <div class="form-group">
-        <label for="exampleInputEmail1">Contact Number</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+        <label for="contact">Contact Number</label>
+        <input type="number" class="form-control" id="contact" name="contact" aria-describedby="emailHelp"
             placeholder="Phone Number">
 
     </div>
 
     <div class="form-group">
-        <label for="exampleInputPassword1">Password</label>
-        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        <label for="password">Password</label>
+        <input type="password" class="form-control" id="password" name="password" placeholder="Password">
     </div>
 
 
     <div class="form-group form-check">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <input type="checkbox" class="form-check-input" id="check" name="check">
         <label class="form-check-label" for="exampleCheck1">I confirm that all information provided are accurate</label>
     </div>
 
-    <button type="submit" class="btn btn-primary .col-auto " id="button">Submit</button>
+    <button type="submit" class="btn btn-primary .col-auto " id="button" name="submit">Submit</button>
 
 
 </form>
